@@ -179,15 +179,11 @@ nav .container {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 800;
     color: white;
-}
-
-.nav-logo img {
-    height: 28px;
-    width: auto;
+    letter-spacing: 4px;
+    text-decoration: none;
 }
 
 .nav-links {
