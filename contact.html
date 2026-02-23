@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Arclight</title>
+    <meta name="description"
+        content="Get in touch with Arclight. Request a demo or ask us anything about our strategic planning platform.">
+    <link rel="icon" type="image/jpeg" href="images/arclight-icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ── Nav ────────────────────────────────── -->
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/arclight-logo-dark.png" alt="Arclight">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#product">Product</a></li>
+                <li><a href="index.html#inspiration">Inspiration</a></li>
+                <li><a href="/login" target="_blank" class="btn btn-ghost btn-sm">Log In</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── Page Header ───────────────────────── -->
+    <section class="page-header">
+        <div class="container">
+            <p class="eyebrow" style="color: rgba(255,255,255,0.5);">GET IN TOUCH</p>
+            <h1>Contact <span class="accent-underline">Us</span></h1>
+            <p>We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- ── Form ───────────────────────────────── -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container" id="formArea">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="you@company.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company / Agency Name</label>
+                        <input type="text" id="company" name="company" placeholder="Your agency name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent" style="width: 100%;">SEND MESSAGE</button>
+                </form>
+
+                <div class="form-success" id="formSuccess">
+                    <div style="font-size: 48px; margin-bottom: 16px;">✓</div>
+                    <h3>Thank you!</h3>
+                    <p>Your message has been sent. We'll get back to you within 1–2 business days.</p>
+                    <br>
+                    <a href="index.html" class="btn btn-ghost-dark">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ────────────────────────────── -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/arclight-logo-dark.png" alt="Arclight">
+                    </a>
+                </div>
+                <div class="footer-col">
+                    <h5>PLATFORM</h5>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#product">Product</a></li>
+                        <li><a href="index.html#inspiration">Inspiration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>COMPANY</h5>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Copyright &copy; 2026 Arclight Ventures Pty Ltd. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const success = document.getElementById('formSuccess');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.style.display = 'none';
+            success.classList.add('show');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>
